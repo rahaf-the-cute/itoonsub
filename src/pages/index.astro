@@ -1,0 +1,31 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+---
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>أهلًا بك في موقع itoonsub!</h1>
+			<p>
+				هنا حيث ستجد مشاريعنا التي نعمل على ترجمتها...
+				لا تنسى دعمنا بالمتابعة صفحاتنا على مواقع التواصل، ومشاركة الحلقات مع أصدقائك
+			</p>
+			<p>مشاريعنا الحالية:</p>
+			<ul>
+				<li>نينجاغو الموسم 15</li>
+			</ul>
+			<p>
+				ترقبونا قريبًا...
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
